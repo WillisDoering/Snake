@@ -1,0 +1,60 @@
+March 20:
+   * Added base code to game and created .gitignore
+
+March 21:
+   * Researched possible ways to do pathfinding
+
+March 26:
+   * Named player "Nydus"
+   * Started work on "Nydus" prototype
+   * Imported graph class written previously
+   * Started work on BFS class
+
+March 28:
+   * Worked on BFS class, creating heatmap
+   * Adapted Graph to use #defines from playfield.h
+   * Modified Makefile to compile new files
+   * Included graph and BFS calls in player.cpp
+
+April 03:
+   * Renamed BFS class to Heatmap
+   * Finished construction of heatmap
+   * Created findFood function for the Heatmap class
+   * Condensed findFood and findHead into find item for flexibility
+
+April 04:
+   * Added debugging flags to the makefile
+   * Worked on path generation an found a problem with heatmap
+
+April 09:
+   * Fixed problem related to heatmap generation and graph generation
+   * Looked back at old code from the tank platform for pathfinding
+   * Worked on path generation bug
+
+April 10:
+   * Updated to new version of the platform
+   * Fixed bug in Heatmap where I was passing in heat instead of position
+   * Fixed bug in Heatmap where directions were inverted
+   * Fixed bug in Heatmap where the path finding traversal went out of scope
+   * Pushed 1st functional implementation
+
+April 15:
+   * Created scanner for maps without obstacles. Works perfect for even height and best less width for odd
+
+April 17:
+   * Merged finished No Obstacles implementation with master
+   * Began design on scanner like implementation for obstacle maps
+   * Made it so when the snake can't find a path, it keeps on going forward until it finds one or dies
+
+April 19:
+   * Continued design on scanner implementation
+   * Updated Doxygen and broke up large functions
+
+April 20:
+   * Started design on a different method used ot coil snake after each food piece
+
+April 21:
+   * Continued work on coil design
+   * Abandoned coil due to time restrictions
+   * Fixed some names and documentation
+   * Found a bug related to the graph adjacency list

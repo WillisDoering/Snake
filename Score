@@ -1,0 +1,46 @@
+Performance:
+20/20   Averages at least 20 on a 17 x 15 grid with no obstacles
+20/20   Averages at least 20 on a 17 x 15 grid with obstacles
+15/15   Averages at least 30 on a 17 x 15 grid with no obstacles
+15/15   Averages at least 30 on a 17 x 15 grid with obstacles (36.7)
+10/10   Averages at least 40 on a 17 x 15 grid with no obstacles
+ 0/10   Averages at least 40 on a 17 x 15 grid with obstacles
+ 5/5    Averages at least 60 on a 17 x 15 grid with no obstacles (254)
+ 0/5    Averages at least 60 on a 17 x 15 grid with obstacles
+-----
+85/100
+
+Bonus!!
+10/10   Averages 100+ on a 17 x 15 grid with no obstacles (254)
+ 0/10   Averages 100+ on a 17 x 15 grid with obstacles
+
+Penalties (this is the penalty scale):
+  -1    Per crash or hang on 17 x 15 grid with no obstacles (100 runs)
+  -1    Per crash or hang on 17 x 15 grid with obstacles (100 runs)
+  -5    Binary files in repository
+  -10%  For each fraction of 0.01 second over 0.01 seconds per move (Opp Lab)
+  -5    Spams trace / log / debugging information to the console during run
+  -5    Code is not modular
+  -5    Code is hard to read
+  -5    Code has errors or warnings when compiled
+-----
+ -10 crashes on the obstacle runs
+
+Log:
+ 8/10   Log shows progression of design and effort is consistent
+ 9/10   Log matches commit history and development efforts
+ 8/10   Log describes algorithm observed in code
+-----
+25/30
+-------------------------------------------------------------------------------
+Total: 110/130  (with bonus can score as high as 140/130)
+
+Code Review and comments:
+
+   - Kind of a cop-out for the no obstacle version.  Also, huge difference in performance
+     between the obstacle and no obstacle versions.
+
+   - Good job on the comments and modularity.
+
+   - Not convinced that 'heatmap' is the right name for the grid you create.  How does that
+     constitute the heat of anything?  Looks and works a lot like BFS.
